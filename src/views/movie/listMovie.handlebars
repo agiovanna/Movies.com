@@ -1,0 +1,24 @@
+<main>
+
+     <h1> Lista de Filmes: </h1>
+
+   {{#each movies}}
+    <div>
+        <input type="hidden" value='{{ Id }}' name="movieId"/>
+        <br>
+        <p> <strong> Name: </strong> {{Nome }} </p>
+        <p> <strong> Year: </strong> {{ Ano }}</p>
+        <p> <strong> Summary: </strong> {{ Resumo }}</p>
+        <p> <strong> Gender: </strong> {{ Genero }}</p>
+        <p> <strong> AgeGroup: </strong> {{ Classificacao }}</p>
+        <p> <strong> Diretor: </strong> {{ Diretor }}</p>
+        <br>
+        <a href="/routeMovie/editMovie/{{ Id }}"><button type="submit">Editar</button></a>
+        <br>
+        <br>
+        <a href="/routeMovie/deleteMovie/{{ Id }}"><button type="submit">Deletar</button> </a>
+    </div>
+    <hr>
+    {{/each}}
+
+</main>

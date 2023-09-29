@@ -1,0 +1,20 @@
+<main>
+    <div class="container_listas">
+     <h1> Lista de Diretores: </h1>
+
+   {{#each directors}}
+    <ul class="lista">
+        <li>
+        <input type="hidden" value='{{tb_director_id}}' name="directorId"/>
+        <br>
+        <p> <strong> Name: </strong> {{tb_director_name}} </p>
+        <a href="/routeDirector/editDirector/{{tb_director_id}}"><button type="submit" class="alterar">Editar</button> </a>
+        <br>
+        <br>
+        <a href="/routeDirector/deleteDirector/{{tb_director_id}}"><button type="submit" class="deletar">Deletar</button> </a>
+    </li>
+    <hr>
+    </ul>
+    {{/each}}
+</div>
+</main>

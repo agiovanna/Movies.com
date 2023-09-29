@@ -1,0 +1,28 @@
+<main>
+    <div>
+        <h1>Editar</h1>
+        <div>
+            {{#each users}}
+            <form action="/routeUser/user/update" method="POST">
+                <div>
+                    <input type="hidden" value='{{tb_user_id}}' name="userId"/>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Name" name="userName" id="userName" value='{{tb_user_name}}' />
+                </div>
+                <br>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" placeholder="Email" name="userEmail" id="userEmail" value='{{tb_user_email}}' />
+                </div>
+                <br>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" placeholder="Password" name="userPassword" id="userPassword" value='{{tb_user_password}}'/>
+                </div>
+                <br>
+                <button type="submit">Registrar</button>
+            </form>
+            {{/each}}
+        </div>
+    </div>
+</main>

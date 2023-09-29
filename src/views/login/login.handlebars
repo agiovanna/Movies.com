@@ -1,0 +1,15 @@
+<main>
+    <div class="Container_login">
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+            <input type="text" placeholder='Email' id="email" name="email" required>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+    </form>
+    <h5> <a href=""> Não possui conta? Cadastre-se </a> </h5>
+    </div>
+
+    {{#if message}}
+    <p>{{message}}</p>
+    {{/if}}
+</main>

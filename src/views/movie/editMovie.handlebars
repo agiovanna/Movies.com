@@ -1,0 +1,62 @@
+<main>
+    <div>
+        <h1>Editar</h1>
+        <div>
+            {{#each movies}}
+            <form action="/routeMovie/movie/update" method="POST">
+                <input type="hidden" value='{{ tb_movie_id }}' name="movieId" />
+                <div>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Name" name="movieName" id="movieName" value="{{tb_movie_name}}" />
+                </div>
+                <br>
+                <div>
+                    <label>Year:</label>
+                    <input type="text" placeholder="Year" name="movieYear" id="movieYear" value="{{tb_movie_year}}" />
+                </div>
+                <br>
+                <div>
+                    <label>Summary:</label>
+                    <input type="text" placeholder="Summary" name="movieSummary" id="movieSummary"
+                        value="{{tb_movie_summary}}" />
+                </div>
+                <br>
+                <div>
+                    {{/each}}
+                    <label>Gender:</label>
+                    <select name="movieGender" id="movieGender">
+                        {{#each genders}}
+                        <option value="{{ tb_gender_id }}">{{ tb_gender_name }}</option>
+                        {{else}}
+                        <option value="0">Nenhum gênero encontrado</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Age Group:</label>
+                    <select name="movieAgeGroup" id="movieAgeGroup">
+                        {{#each group}}
+                        <option value="{{ tb_age_group_id }}">{{ tb_age_group_description }}</option>
+                        {{else}}
+                        <option value="0">Nenhuma faixa etária encontrada</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Director:</label>
+                    <select name="movieDirector" id="movieDirector">
+                        {{#each director}}
+                        <option value="{{ tb_director_id }}">{{ tb_director_name }}</option>
+                        {{else}}
+                        <option value="0">Nenhum diretor encontrado</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <br>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,58 @@
+<main>
+    <div>
+        <h1>Cadastre-se</h1>
+        <div>
+            <form action="/routeMovie/movie/new" method="POST" />
+                <div>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Name" name="movieName" id="movieName" />
+                </div>
+                <br>
+                <div>
+                    <label>Year:</label>
+                    <input type="text" placeholder="Year" name="movieYear" id="movieYear" />
+                </div>
+                <br>
+                <div>
+                    <label>Summary:</label>
+                    <input type="text" placeholder="Summary" name="movieSummary" id="movieSummary" />
+                </div>
+                <br>
+                <div>
+                    <label>Gender:</label>
+                    <select name="movieGender" id="movieGender">
+                        {{#each genders}}
+                             <option value="{{tb_gender_id}}">{{tb_gender_name}}</option>
+                             {{else}}
+                             <option value="0">Nenhum gênero encontrado</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Age Group:</label>
+                    <select name="movieAgeGroup" id="movieAgeGroup">
+                        {{#each group}}
+                             <option value="{{tb_age_group_id}}">{{tb_age_group_description}}</option>
+                             {{else}}
+                             <option value="0">Nenhuma faixa etária encontrada</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Director:</label>
+                    <select name="movieDirector" id="movieDirector">
+                        {{#each director}}
+                        <option value="{{ tb_director_id }}">{{ tb_director_name }}</option>
+                        {{else}}
+                        <option value="0">Nenhum diretor encontrado</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <br>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+</main>

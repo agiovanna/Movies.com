@@ -1,0 +1,212 @@
+.navbar {
+    display: flex;
+    color: white;
+    background-color: #9DC7DD;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.navbar ul{
+  list-style: none;
+  margin: 15px;
+  justify-content: space-between;
+  
+}
+
+.navbar li {
+    margin: 15px;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+}
+
+.d-flex {
+    max-height: 40px;
+    min-height: 40px;
+    margin: 5px;
+}
+
+.d-flex button {
+    background-color: #ECCA5B;
+    border-color:#ECCA5B ;
+    color: white;
+}
+
+.d-flex button:hover {
+    background-color: #DE2D2B ;
+    border-style: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+  }
+
+
+body {
+    background-color: #DDEEF1 ;
+     align-items: center;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ 
+ .Container_login {
+     background-color: #ffff;
+     display: block;
+     width: 450px;
+     height: 400px;
+     border-radius: 15px;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
+     margin-top: 10%;
+ }
+ 
+ .Container_login h2 {
+     font-size: 2rem;
+     
+ }
+ 
+ .Container_login input {
+     width: 80%;
+     max-height: 45px;
+     min-height: 45px;
+     font-size: 16px;
+     border-radius: 12px;
+     border-color: #1E61B5;
+     padding: 3px;
+     margin: 20px 10px 5px 10px;
+     text-align: center;
+     border-style: solid;
+     background-color: whitesmoke;
+     
+ }
+ 
+ .Container_login button {
+     background-color: #ECCA5B;
+     width: 50%;
+     max-height: 40px;
+     min-height: 40px;
+     border-radius: 12px;
+     margin-top: 25px;
+     border: none;
+     text-decoration: none;
+     font-size: 16px;
+ }
+ 
+ .Container_login button a {
+     text-decoration: none;
+     color: white;
+ }
+
+ .Container_cadastro {
+    background-color: #ffff;
+    display: block;
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+}
+
+.Container_cadastro h2 {
+    font-size: 2rem;
+    
+}
+
+.Container_cadastro input {
+    width: 80%;
+    max-height: 45px;
+    min-height: 45px;
+    font-size: 16px;
+    border-radius: 12px;
+    border-color: #1E61B5;
+    padding: 3px;
+    margin: 20px 10px 5px 10px;
+    text-align: center;
+    border-style: solid;
+    background-color: whitesmoke;
+    
+}
+
+.Container_cadastro button {
+    background-color: #ECCA5B;
+    width: 50%;
+    max-height: 40px;
+    min-height: 40px;
+    border-radius: 12px;
+    margin-top: 25px;
+    border: none;
+
+    font-size: 16px; 
+}
+
+.Container_cadastro button a {
+   text-decoration: none;
+   color: white;
+}
+
+.container_listas h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container_listas {
+    background-color: white;
+    width: 75%;
+    padding: 25px;
+    margin-right: 5px;
+    border-radius: 12px;
+
+}
+
+.container_listas ul {
+    list-style: none;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.container_listas li {
+    margin: 25px;
+}
+
+.container_listas p{
+    font-size: 16px;
+}
+
+.container_listas button a {
+    text-decoration: none;
+    color: white;
+}
+
+.container_listas button {
+    width: 85px;
+    height: 35px;
+    margin: 5px 40px 5px 40px;
+    border-radius: 10px;
+    border-style: none;
+    align-self: self-end;
+
+}
+
+.alterar {
+    background-color: #1E61B5;
+}
+
+.deletar {
+    background-color: #DE2D29;
+}
+

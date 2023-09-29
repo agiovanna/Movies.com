@@ -1,0 +1,18 @@
+<main>
+    <div>
+        <h1>Editar</h1>
+        <div>
+            {{#each directors}}
+            <form action="/routeDirector/director/update" method="POST">
+                <div>
+                    <input type="hidden" value='{{tb_director_id}}' name="directorId"/>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Name" name="directorName" id="directorName" value='{{tb_director_name}}' />
+                </div>
+                <br>
+                <button type="submit">Registrar</button>
+            </form>
+            {{/each}}
+        </div>
+    </div>
+</main>
